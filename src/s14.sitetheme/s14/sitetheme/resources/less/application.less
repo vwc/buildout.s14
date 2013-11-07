@@ -1,43 +1,105 @@
-// Custom application specific styles
-//--------------------------------------
+//
+// Application stylesheet
+// -----------------------------------------------
 
-body > header {
-    margin-bottom: @line-height-computed;
-    #toolbar + nav {
-        margin-top: @navbar-height;
+.app-navbar {
+    border-top: (@line-height-computed / 4) solid @app-green-light;
+    margin-bottom: 0;
+    .navbar-brand {
+        color: @app-green;
+        font-weight: 700;
+        > .first-letter {
+            font-size: @font-size-base * 1.5;
+        }
+    }
+    .navbar-nav {
+        > li > a {
+            background: @app-green-light;
+            &:hover,
+            &:focus {
+                color: @navbar-default-link-hover-color;
+                background-color: @navbar-default-link-hover-bg;
+            }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
     }
 }
 
-// Some eample styles for portlets
-
-.portlet {
-  .portletHeader {
-    font-size: @font-size-base * 1.5;
-    padding: @line-height-computed / 2;
-    border-bottom: 1px solid @gray-light;
-  }
-  .portletItem {
-    padding: @padding-large-vertical;
-  }
-  .portletFooter {
-    padding: @padding-large-vertical;
-    font-size: @font-size-small;
-  }
+.app-toolbar + .app-navbar,
+.app-toolbar + .app-brandbar {
+    margin-top: @navbar-height;
 }
 
-// s14 styles for listings (e.g. folder summary view)
-
-.tileItem {
-  .media();
-  .tileHeadline {
-    .media-heading();
-  }
+.app-brandbar {
+    border-top: (@line-height-computed / 4) solid @app-green-light;
+    padding: @line-height-computed 0 (@line-height-computed / 2);
 }
 
-
-// s14 styles for a HMTL5 based site footer
-body > footer {
-    margin-top: @line-height-computed;
-    padding: @line-height-computed 0;
-    border-top: 1px solid @gray-lighter;
+.app-brandname {
+    padding: @line-height-computed @navbar-padding-horizontal;
+    color: @app-green;
+    font-weight: 700;
+    font-size: @font-size-large;
+    line-height: @line-height-computed;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
 }
+
+.btn {
+    border-radius: 0;
+}
+
+// Add basic styling to all input types
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    .form-control();
+}
+
+// Reset tetarea height
+textarea {
+    height: auto;
+}
+
+// Form control sizing
+// Redefined here since our custom input field reset is applied later
+// during rendering and therefore overrides these
+.input-sm {
+  .input-size(@input-height-small; @padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
+
+.input-lg {
+  .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+
+.app-content {
+    border-top: 1px solid @gray-light;
+}
+
+.app-page {
+    font-size: @font-size-base * 1.25;
+}
+

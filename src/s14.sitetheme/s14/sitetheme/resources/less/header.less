@@ -1,0 +1,42 @@
+//
+// Header and jumbotron styles
+// -----------------------------------------
+
+.app-header {
+    background: @app-hero-bg;
+    @media (min-width: @screen-tablet) {
+        min-height: 330px;
+        background:url(../../assets/img/banner.jpg) no-repeat 50% 0 @app-hero-bg;
+    }
+}
+
+.app-jumbotron {
+    margin-bottom: (@line-height-computed / 4);
+    .text-center();
+}
+
+// Pills restyled
+// -------------------------
+.nav-main {
+  > li {
+    // Links rendered as pills
+    > a {
+      border-radius: 0;
+      color: @text-color;
+      background-color: @app-green-light;
+    }
+    + li {
+      margin-left: 2px;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-pills-active-link-hover-color;
+        background-color: @nav-pills-active-link-hover-bg;
+      }
+    }
+  }
+}

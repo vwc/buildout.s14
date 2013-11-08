@@ -57,7 +57,7 @@
             css:content-children="#portal-personaltools" />
 
         <!-- Logo (link target) -->
-        <copy attributes="href" css:content="#portal-logo" css:theme="a.brand" />
+        <copy attributes="href" css:content="#portal-logo" css:theme=".app-brandname" />
 
         <!-- Site actions -->
         <!--<replace css:content="#portal-siteactions li" css:theme-children="#global-nav" />-->
@@ -68,7 +68,7 @@
 
         <!-- Global navigation -->
         <replace css:content="#portal-globalnav li"
-            css:theme-children="#main-nav" />
+            css:theme-children="#app-main-nav" />
 
         <!-- Breadcrumbs -->
         <replace css:content-children='#portal-breadcrumbs'

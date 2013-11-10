@@ -20,6 +20,15 @@
             <p>{{ page.lead }}</p>
         </div>
     </div>
+    <div class="jumbotron app-jumbotron">
+        <div class="container">
+            <p>{{ page.lead }}</p>
+            <a class="app-jumbotron-link" href="">
+                Meine Vita &raquo;
+            </a>
+        </div>
+    </div>
+
     <div class="app-content">
         <div class="container" role="main">
           {{ content }}
@@ -27,7 +36,7 @@
       </div>
 
     </div>
-
+    <hr>
     {% include footer.html %}
     <!-- JS and analytics only. -->
     {% include javascript.html %}

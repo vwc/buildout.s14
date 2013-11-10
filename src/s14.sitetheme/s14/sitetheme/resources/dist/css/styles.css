@@ -10762,7 +10762,7 @@ dd.image-caption {
   font-family: 'Open Sans', sans-serif;
   color: #fff;
   background: none repeat scroll 0 0 #477065;
-  border-top: 1px solid #999999;
+  border-top: 2px solid #dce0d4;
 }
 
 .app-footer a {
@@ -11074,7 +11074,11 @@ textarea.input-lg {
 }
 
 .app-content {
-  border-top: 1px solid #999999;
+  padding-bottom: 22px;
+  margin-top: 11px;
+  margin-bottom: 22px;
+  border-top: 2px solid #dce0d4;
+  border-bottom: 2px solid #dce0d4;
 }
 
 .app-page {

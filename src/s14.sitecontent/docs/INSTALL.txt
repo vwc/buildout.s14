@@ -1,0 +1,17 @@
+s14.sitecontent Installation
+----------------------------
+
+To install s14.sitecontent using zc.buildout and the plone.recipe.zope2instance
+recipe to manage your project, you can do this:
+
+* Add ``s14.sitecontent`` to the list of eggs to install, e.g.:
+
+    [buildout]
+    ...
+    eggs =
+        ...
+        s14.sitecontent
+       
+* Re-run buildout, e.g. with:
+
+    $ ./bin/buildout

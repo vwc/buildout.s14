@@ -91,10 +91,15 @@
     <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4">
-            <a class="app-brandname" href="">Andreas Strobel</a>
+            <div class="app-brand">
+                <a class="app-brandname" href="">
+                    <span>Andreas</span>
+                    <span>Strobel</span>
+                </a>
+            </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-8">
-            <nav class="app-nav pull-right" role="navigation">
+            <nav class="app-nav" role="navigation">
                 <ul class="nav nav-pills nav-main" id="app-main-nav">
                   <li><a href="#">Termine</a></li>
                   <li><a href="#">Blog</a></li>
@@ -107,10 +112,10 @@
     </div>
 </header>
     <!-- Docs page layout -->
-    <div class="app-header">
+    <div class="app-header hidden-xs">
         <div class="container">
-            <h1>AS</h1>
-            <p>Unser AS für Neusäß</p>
+            <h1 class="app-header-content">AS</h1>
+            <p class="app-header-content">Unser AS für Neusäß</p>
         </div>
     </div>
     <div class="app-content">
@@ -140,7 +145,7 @@
       </div>
 
     </div>
-    <hr>
+
     <footer class="app-footer" id="app-footer" role="contentinfo">
     <section class="container app-footer-content">
         &copy; 2013 Andreas Strobel. All rights reserved.

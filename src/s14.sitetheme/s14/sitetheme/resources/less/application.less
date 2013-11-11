@@ -2,56 +2,9 @@
 // Application stylesheet
 // -----------------------------------------------
 
-.app-navbar {
-    border-top: (@line-height-computed / 4) solid @app-green-light;
-    margin-bottom: 0;
-    .navbar-brand {
-        color: @app-green;
-        font-weight: 700;
-        > .first-letter {
-            font-size: @font-size-base * 1.5;
-        }
-    }
-    .navbar-nav {
-        > li > a {
-            background: @app-green-light;
-            &:hover,
-            &:focus {
-                color: @navbar-default-link-hover-color;
-                background-color: @navbar-default-link-hover-bg;
-            }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: @navbar-default-link-active-color;
-            background-color: @navbar-default-link-active-bg;
-          }
-        }
-    }
-}
-
 .app-toolbar + .app-navbar,
 .app-toolbar + .app-brandbar {
     margin-top: @navbar-height;
-}
-
-.app-brandbar {
-    border-top: (@line-height-computed / 4) solid @app-green-light;
-    padding: @line-height-computed 0 (@line-height-computed / 2);
-}
-
-.app-brandname {
-    padding: @line-height-computed @navbar-padding-horizontal;
-    color: @app-green;
-    font-weight: 700;
-    font-size: @font-size-large;
-    line-height: @line-height-computed;
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
 }
 
 .btn {
@@ -96,7 +49,7 @@ textarea {
 }
 
 .app-content {
-    margin-top: (@line-height-computed / 2);
+    margin-top: 3px;
     margin-bottom: @line-height-computed;
     padding-bottom: @line-height-computed;
     border-top: 2px solid @app-green-light;

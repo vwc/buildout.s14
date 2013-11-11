@@ -1,0 +1,98 @@
+//
+// Brandbar and main navigation
+// ------------------------------------------------
+
+.app-brandbar {
+    border-top: (@line-height-computed / 4) solid @app-green-light;
+    padding: @line-height-computed 0 (@line-height-computed / 2);
+}
+
+.app-brand {
+    .center-block();
+    padding: (@line-height-computed /2) @navbar-padding-horizontal;
+    text-align: center;
+    margin-bottom: @line-height-computed;
+    @media (min-width: @screen-tablet) {
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+.app-brandname {
+    //padding: @line-height-computed @navbar-padding-horizontal;
+    color: @app-green;
+    font-weight: 700;
+    font-size: @font-size-large;
+    line-height: @line-height-computed;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+    > span {
+        display: inline-block;
+        &:first-letter {
+            font-size: (@font-size-large * 1.5);
+        }
+    }
+}
+
+
+// App nav - pills restyled
+// -------------------------
+.nav-main {
+    > li {
+        float: left;
+        > a {
+          border-radius: 0;
+          color: @text-color;
+          background-color: @app-green-light;
+        }
+        + li {
+          margin-left: 2px;
+        }
+        
+        // Active state
+        &.active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @nav-pills-active-link-hover-color;
+            background-color: @nav-pills-active-link-hover-bg;
+          }
+        }
+    }
+    @media (min-width: @screen-tablet) {
+        .pull-right();
+    }
+}
+
+
+.app-navbar {
+    border-top: (@line-height-computed / 4) solid @app-green-light;
+    margin-bottom: 0;
+    .navbar-brand {
+        color: @app-green;
+        font-weight: 700;
+        > .first-letter {
+            font-size: @font-size-base * 1.5;
+        }
+    }
+    .navbar-nav {
+        > li > a {
+            background: @app-green-light;
+            &:hover,
+            &:focus {
+                color: @navbar-default-link-hover-color;
+                background-color: @navbar-default-link-hover-bg;
+            }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+          }
+        }
+    }
+}

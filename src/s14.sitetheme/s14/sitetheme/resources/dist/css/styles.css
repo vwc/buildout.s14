@@ -10723,20 +10723,49 @@ dd.image-caption {
   padding: 22px 0;
 }
 
-.app-header {
-  background: #ababab;
+.app-brandbar {
+  padding: 22px 0 11px;
+  border-top: 5.5px solid #dce0d4;
+}
+
+.app-brand {
+  display: block;
+  padding: 11px 15px;
+  margin-right: auto;
+  margin-bottom: 22px;
+  margin-left: auto;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  .app-header {
-    min-height: 330px;
-    background: url(../assets/img/banner.jpg) no-repeat 50% 0 #ababab;
+  .app-brand {
+    margin-bottom: 0;
+    text-align: left;
   }
 }
 
-.app-jumbotron {
-  margin-bottom: 5.5px;
-  text-align: center;
+.app-brandname {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #477065;
+}
+
+.app-brandname:hover,
+.app-brandname:focus {
+  text-decoration: none;
+}
+
+.app-brandname > span {
+  display: inline-block;
+}
+
+.app-brandname > span:first-letter {
+  font-size: 30px;
+}
+
+.nav-main > li {
+  float: left;
 }
 
 .nav-main > li > a {
@@ -10756,22 +10785,11 @@ dd.image-caption {
   background-color: #428bca;
 }
 
-.app-footer {
-  padding: 4rem 0;
-  margin: 4rem 0 0;
-  font-family: 'Open Sans', sans-serif;
-  color: #fff;
-  background: none repeat scroll 0 0 #477065;
-  border-top: 2px solid #dce0d4;
-}
-
-.app-footer a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.app-footer a:hover {
-  color: #eeeeee;
+@media (min-width: 768px) {
+  .nav-main {
+    float: right !important;
+    float: right;
+  }
 }
 
 .app-navbar {
@@ -10805,27 +10823,48 @@ dd.image-caption {
   background-color: #eeeeee;
 }
 
+.app-header {
+  background: #ababab;
+}
+
+@media (min-width: 768px) {
+  .app-header {
+    min-height: 330px;
+    background: url(../assets/img/banner.jpg) no-repeat 50% 0 #ababab;
+  }
+}
+
+.app-header .app-header-content {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.app-jumbotron {
+  margin-bottom: 5.5px;
+  text-align: center;
+}
+
+.app-footer {
+  padding: 4rem 0;
+  margin: 4rem 0 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background: none repeat scroll 0 0 #477065;
+  border-top: 2px solid #dce0d4;
+}
+
+.app-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.app-footer a:hover {
+  color: #eeeeee;
+}
+
 .app-toolbar + .app-navbar,
 .app-toolbar + .app-brandbar {
   margin-top: 50px;
-}
-
-.app-brandbar {
-  padding: 22px 0 11px;
-  border-top: 5.5px solid #dce0d4;
-}
-
-.app-brandname {
-  padding: 22px 15px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 22px;
-  color: #477065;
-}
-
-.app-brandname:hover,
-.app-brandname:focus {
-  text-decoration: none;
 }
 
 .btn {
@@ -11075,7 +11114,7 @@ textarea.input-lg {
 
 .app-content {
   padding-bottom: 22px;
-  margin-top: 11px;
+  margin-top: 3px;
   margin-bottom: 22px;
   border-top: 2px solid #dce0d4;
   border-bottom: 2px solid #dce0d4;

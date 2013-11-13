@@ -10907,8 +10907,12 @@ article.vevent {
   border-bottom: 2px solid #f1f3ee;
 }
 
+.vevent .cal_date {
+  display: none;
+}
+
 .vevent div.cal_info {
-  margin-left: 8em;
+  margin-left: 0;
 }
 
 article.vevent .documentByLine {

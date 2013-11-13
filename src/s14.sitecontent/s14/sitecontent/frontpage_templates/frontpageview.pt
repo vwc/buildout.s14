@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="s14.sitecontent">
+<body>
+
+<metal:main fill-slot="main">
+  <metal:content-core define-macro="main">
+  <section tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                       portal_url context/portal_url">
+
+    <div id="fp-lead">
+        <p class="lead" tal:condition="context/Description"
+            tal:content="context/Description" />
+        <a class="app-jumbotron-link" href="/vita"
+            tal:attributes="href python:portal_url + '/vita'">
+            Meine Vita &raquo;
+        </a>
+    </div>
+
+    <div id="fp-content">
+        <div class="row"
+            tal:define=="portal_url context/portal_url">
+            <div class="col-xs-12 col-md-6">
+                <h2>Termine</h2>
+                <div class="fp-content-block"
+                    tal:condition="view/has_events">
+                    <tal:block tal:repeat="item view/recent_events">
+                        <small class="text-muted" tal:content="python:toLocalizedTime(item.start)" />
+                        <p tal:content="item/Title" />
+                        <a tal:attributes="href item/getURL">
+                            mehr &raquo;
+                        </a>
+                    </tal:block>
+                </div>
+                <a class="btn btn-danger" href=""
+                    tal:attributes="href python:portal_url + '/termine'">
+                    Weitere Termine
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h2>Blog</h2>
+                <div class="fp-content-block"
+                    tal:condition="view/has_blogentries">
+                    <tal:block tal:repeat="item view/blogentries">
+                        <p tal:content="item/Title" />
+                        <a tal:attributes="href item/getURL">
+                            mehr &raquo;</a>
+                    </tal:block>
+                </div>
+                <a class="btn btn-warning" href=""
+                    tal:attributes="href python:portal_url + '/blog'">
+                    Weitere Artikel
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="fp-facebook">
+        <div tal:condition="context/text"
+            tal:content="structure context/text/output" />
+    </div>
+  </section>
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>

@@ -11668,3 +11668,8 @@ textarea.input-lg {
     border-bottom-color: #ffffff;
   }
 }
+
+.fp-content-block {
+  margin-bottom: 11px;
+  border-bottom: 2px solid #dce0d4;
+}

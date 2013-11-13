@@ -11,7 +11,7 @@
     <theme href="dist/signin.html" css:if-content="body.template-mail_password_form" />
 
     <theme href="dist/frontpage.html" css:if-content="body.section-startseite" />
-    
+
     <!-- Rules applying to a standard Plone web page -->
     <rules css:if-content="#visual-portal-wrapper">
 
@@ -85,6 +85,14 @@
         <replace css:content-children="#content"
                 css:theme-children="#page-content"
                 css:if-content="body.template-mail_password_form" />
+
+        <replace css:content-children="#fp-lead"
+            css:theme-children="#fp-lead"
+            css:if-content="body.section-startseite" />
+        <replace css:content-children="#fp-content"
+            css:theme-children="#content"
+            css:if-content="body.section-startseite" />
+
 
         <!-- Document Content -->
         <replace css:content-children="#content" 

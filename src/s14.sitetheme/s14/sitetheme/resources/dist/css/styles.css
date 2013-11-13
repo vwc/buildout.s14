@@ -10904,39 +10904,7 @@ dd.image-caption {
 article.vevent {
   padding: 1em;
   margin-top: 1em;
-  background-color: #f1f3ee;
-}
-
-.vevent div.cal_date {
-  float: left;
-  min-width: 4.4em;
-  padding: 0.7em 0.7em 0.5em;
-  margin: 0 1.5em 0.5em 0;
-  vertical-align: top;
-  background-color: white;
-  border: none;
-  border-radius: 0.5em;
-  box-shadow: 0.5em 0.5em 0.4em black;
-}
-
-.vevent span.cal_wkday {
-  display: block;
-  padding-bottom: 0.3em;
-  font-size: 2.3em;
-  font-weight: bold;
-  border-bottom: 2px solid black;
-}
-
-.vevent span.cal_day {
-  display: inline-block;
-  padding-top: 0.3em;
-  font-size: 1.7em;
-}
-
-.vevent span.cal_month {
-  display: inline-block;
-  font-size: 1.3em;
-  line-height: 1.3em;
+  border-bottom: 2px solid #f1f3ee;
 }
 
 .vevent div.cal_info {

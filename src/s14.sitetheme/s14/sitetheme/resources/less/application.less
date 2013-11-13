@@ -57,7 +57,34 @@ textarea {
 }
 
 .app-page {
-    font-size: @font-size-base * 1.25;
+    // font-size: @font-size-base * 1.25;
+}
+
+.app-list-item {
+    margin-bottom: (@line-height-computed / 2);
+    border-bottom: 2px solid @app-green-light;
+}
+
+.app-text-quoted {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        .square(50px);
+        background:url(../../assets/img/quote-open.png) no-repeat 0 0 transparent;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+        .square(50px);
+        background:url(../../assets/img/quote-closed.png) no-repeat 0 0 transparent;
+    }
 }
 
 // Event listing
@@ -69,6 +96,12 @@ textarea {
 
 .fp-content-block {
     margin-bottom: (@line-height-computed / 2);
-    border-bottom: 2px solid @app-green-light;
+}
+.fp-sm-teaser {
+    background: @app-green-lighter;
+    padding: @line-height-computed;
+    .fp-facebook-teaser {
+        padding: @line-height-computed;
+    }
 }
 

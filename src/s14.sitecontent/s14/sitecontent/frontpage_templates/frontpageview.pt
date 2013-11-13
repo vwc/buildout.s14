@@ -13,11 +13,11 @@
                        portal_url context/portal_url">
 
     <div id="fp-lead">
-        <p class="lead" tal:condition="context/Description"
+        <p class="lead app-text-quoted" tal:condition="context/Description"
             tal:content="context/Description" />
         <a class="app-jumbotron-link" href="/vita"
             tal:attributes="href python:portal_url + '/vita'">
-            Meine Vita &raquo;
+            <small>Meine Vita &raquo;</small>
         </a>
     </div>
 
@@ -29,11 +29,13 @@
                 <div class="fp-content-block"
                     tal:condition="view/has_events">
                     <tal:block tal:repeat="item view/recent_events">
-                        <small class="text-muted" tal:content="python:toLocalizedTime(item.start)" />
-                        <p tal:content="item/Title" />
-                        <a tal:attributes="href item/getURL">
-                            mehr &raquo;
-                        </a>
+                        <div class="app-list-item">
+                            <small class="text-muted" tal:content="python:toLocalizedTime(item.start)" />
+                            <p tal:content="item/Title" />
+                            <a tal:attributes="href item/getURL">
+                                mehr &raquo;
+                            </a>
+                        </div>
                     </tal:block>
                 </div>
                 <a class="btn btn-danger" href=""
@@ -46,9 +48,12 @@
                 <div class="fp-content-block"
                     tal:condition="view/has_blogentries">
                     <tal:block tal:repeat="item view/blogentries">
-                        <p tal:content="item/Title" />
-                        <a tal:attributes="href item/getURL">
-                            mehr &raquo;</a>
+                        <div class="app-list-item">
+                            <h5 tal:content="item/Title" />
+                            <p tal:content="item/Description" />
+                            <a tal:attributes="href item/getURL">
+                                mehr &raquo;</a>
+                        </div>
                     </tal:block>
                 </div>
                 <a class="btn btn-warning" href=""
@@ -60,7 +65,7 @@
     </div>
 
     <div id="fp-facebook">
-        <div tal:condition="context/text"
+        <div class="fp-facebook-teaser app-text-quoted" tal:condition="context/text"
             tal:content="structure context/text/output" />
     </div>
   </section>

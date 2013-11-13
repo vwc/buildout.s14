@@ -4,17 +4,29 @@
 
 .app-header {
     background: @app-hero-bg;
-    @media (min-width: @screen-tablet) {
-        min-height: 330px;
-        background:url(../../assets/img/banner.jpg) no-repeat 50% 0 @app-hero-bg;
-    }
-    .app-header-content {
+    .app-header-text {
         text-indent: -9999px;
         overflow: hidden;              
     }
 }
 
+@media (min-width: @screen-tablet) {
+    .app-header {
+        height: 330px;
+        background:url(../../assets/img/header-bg-01.jpg) no-repeat 100% 0 @app-hero-bg;
+    }
+    body.section-blog .app-header {
+        background-image:url(../../assets/img/header-bg-02.jpg);
+    }
+    body.section-vita .app-header {
+        background-image:url(../../assets/img/header-bg-03.jpg);
+    }
+    body.section-termine .app-header {
+        background-image:url(../../assets/img/header-bg-04.jpg);
+    }
+}
+
 .app-jumbotron {
-    margin-bottom: (@line-height-computed / 4);
+    margin-bottom: ceil(@line-height-computed / 4);
     .text-center();
 }

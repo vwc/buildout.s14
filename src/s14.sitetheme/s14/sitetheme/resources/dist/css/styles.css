@@ -10827,20 +10827,29 @@ dd.image-caption {
   background: #ababab;
 }
 
-@media (min-width: 768px) {
-  .app-header {
-    min-height: 330px;
-    background: url(../assets/img/banner.jpg) no-repeat 50% 0 #ababab;
-  }
-}
-
-.app-header .app-header-content {
+.app-header .app-header-text {
   overflow: hidden;
   text-indent: -9999px;
 }
 
+@media (min-width: 768px) {
+  .app-header {
+    height: 330px;
+    background: url(../assets/img/header-bg-01.jpg) no-repeat 100% 0 #ababab;
+  }
+  body.section-blog .app-header {
+    background-image: url(../assets/img/header-bg-02.jpg);
+  }
+  body.section-vita .app-header {
+    background-image: url(../assets/img/header-bg-03.jpg);
+  }
+  body.section-termine .app-header {
+    background-image: url(../assets/img/header-bg-04.jpg);
+  }
+}
+
 .app-jumbotron {
-  margin-bottom: 5.5px;
+  margin-bottom: 6px;
   text-align: center;
 }
 
@@ -11506,8 +11515,35 @@ textarea.input-lg {
   border-bottom: 2px solid #dce0d4;
 }
 
-.app-page {
-  font-size: 20px;
+.app-list-item {
+  margin-bottom: 11px;
+  border-bottom: 2px solid #dce0d4;
+}
+
+.app-text-quoted {
+  position: relative;
+}
+
+.app-text-quoted:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/img/quote-open.png) no-repeat 0 0 transparent;
+  content: "";
+}
+
+.app-text-quoted:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../assets/img/quote-closed.png) no-repeat 0 0 transparent;
+  content: "";
 }
 
 .mode_selector {
@@ -11671,5 +11707,13 @@ textarea.input-lg {
 
 .fp-content-block {
   margin-bottom: 11px;
-  border-bottom: 2px solid #dce0d4;
+}
+
+.fp-sm-teaser {
+  padding: 22px;
+  background: #f1f3ee;
+}
+
+.fp-sm-teaser .fp-facebook-teaser {
+  padding: 22px;
 }

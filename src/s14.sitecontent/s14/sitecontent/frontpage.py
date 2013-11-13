@@ -30,6 +30,6 @@ class FrontPageView(grok.View):
         items = catalog(object_provides=IEvent.__identifier__,
                         review_state='published',
                         sort_on='modified',
-                        sort_limit=2)[:2]
+                        sort_limit=4)[:4]
         results = IContentListing(items)
         return results

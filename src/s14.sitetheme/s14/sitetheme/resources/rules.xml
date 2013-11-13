@@ -92,6 +92,9 @@
         <replace css:content-children="#fp-content"
             css:theme-children="#content"
             css:if-content="body.section-startseite" />
+        <replace css:content-children="#fp-facebook"
+            css:theme-children="#fp-facebook-teaser"
+            css:if-content="body.section-startseite" />
 
 
         <!-- Document Content -->

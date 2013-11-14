@@ -61,6 +61,9 @@ textarea {
     padding-bottom: @line-height-computed;
     border-top: 2px solid @app-green-light;
     border-bottom: 2px solid @app-green-light;
+    &.app-content-frontpage {
+        padding-bottom: 0;
+    }
 }
 
 .app-page {
@@ -100,13 +103,13 @@ textarea {
     .nav-tabs();
 }
 
-.fp-bordered-column {
-    border-left: 2px solid @app-green-light;
+@media (min-width: @screen-tablet) {
+    .fp-bordered-column {
+        border-left: 2px solid @app-green-light;
+    }
 }
 
 .fp-box {
-    padding-right: @line-height-computed;
-    border-right: 2px solid @app-green-lighter;
     .fb-box-footer {
         padding: @line-height-computed 0;
     }
@@ -116,14 +119,20 @@ textarea {
     margin-top: @line-height-computed;
     margin-bottom: (@line-height-computed / 2);
 }
+
+.fp-sm-block {
+    border-bottom: 2px solid @app-green-light;
+}
+
 .fp-sm-teaser {
-    background: @app-green-lighter;
     padding: @line-height-computed;
+    background: @app-green-lighter;
     .fp-facebook-teaser {
         padding: @line-height-computed;
     }
     @media (min-width: @screen-tablet) {
         padding: (@navbar-height * 2) @navbar-height;
+        margin-right: (@line-height-computed * 4);
     }
 }
 

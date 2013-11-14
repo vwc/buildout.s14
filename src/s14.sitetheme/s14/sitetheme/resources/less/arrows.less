@@ -11,13 +11,16 @@
     .center-block();
     width: 0;
     height: 0;
-    border-left: (@line-height-computed * 2) solid transparent;
     border-right: (@line-height-computed * 2) solid transparent;
+    border-bottom: (@line-height-computed * 2) solid transparent;
     border-top: (@line-height-computed * 2) solid transparent;
+    @media (min-width: @screen-tablet) {
+        margin-top: @navbar-height;
+    }
 }
 .app-decoarrow-default {
     border-top: (@line-height-computed * 2) solid @app-gray-light;
 }
 .app-decoarrow-light {
-    border-top: (@line-height-computed * 2) solid @app-green-lighter;
+    border-left: (@line-height-computed * 2) solid @app-green-lighter;
 }

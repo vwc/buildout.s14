@@ -10675,7 +10675,13 @@ dd.image-caption {
   margin-left: auto;
   border-top: 44px solid transparent;
   border-right: 44px solid transparent;
-  border-left: 44px solid transparent;
+  border-bottom: 44px solid transparent;
+}
+
+@media (min-width: 768px) {
+  .app-decoarrow {
+    margin-top: 50px;
+  }
 }
 
 .app-decoarrow-default {
@@ -10683,7 +10689,7 @@ dd.image-caption {
 }
 
 .app-decoarrow-light {
-  border-top: 44px solid #f1f3ee;
+  border-left: 44px solid #f1f3ee;
 }
 
 .app-simple {
@@ -11535,6 +11541,10 @@ textarea.input-lg {
   border-bottom: 2px solid #dce0d4;
 }
 
+.app-content.app-content-frontpage {
+  padding-bottom: 0;
+}
+
 .app-list-item {
   margin-bottom: 11px;
   border-bottom: 2px solid #dce0d4;
@@ -11725,13 +11735,10 @@ textarea.input-lg {
   }
 }
 
-.fp-bordered-column {
-  border-left: 2px solid #dce0d4;
-}
-
-.fp-box {
-  padding-right: 22px;
-  border-right: 2px solid #f1f3ee;
+@media (min-width: 768px) {
+  .fp-bordered-column {
+    border-left: 2px solid #dce0d4;
+  }
 }
 
 .fp-box .fb-box-footer {
@@ -11741,6 +11748,10 @@ textarea.input-lg {
 .fp-content-block {
   margin-top: 22px;
   margin-bottom: 11px;
+}
+
+.fp-sm-block {
+  border-bottom: 2px solid #dce0d4;
 }
 
 .fp-sm-teaser {
@@ -11755,5 +11766,6 @@ textarea.input-lg {
 @media (min-width: 768px) {
   .fp-sm-teaser {
     padding: 100px 50px;
+    margin-right: 88px;
   }
 }

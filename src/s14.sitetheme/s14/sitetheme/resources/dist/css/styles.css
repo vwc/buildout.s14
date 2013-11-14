@@ -11208,6 +11208,116 @@ article.vevent .documentByLine {
   border-bottom-color: transparent;
 }
 
+.event_listing ul.mode_selector .caltrigger {
+  display: none !important;
+}
+
+.event_listing ul.sub_nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.event_listing ul.sub_nav:before,
+.event_listing ul.sub_nav:after {
+  display: table;
+  content: " ";
+}
+
+.event_listing ul.sub_nav:after {
+  clear: both;
+}
+
+.event_listing ul.sub_nav:before,
+.event_listing ul.sub_nav:after {
+  display: table;
+  content: " ";
+}
+
+.event_listing ul.sub_nav:after {
+  clear: both;
+}
+
+.event_listing ul.sub_nav > li {
+  position: relative;
+  display: block;
+}
+
+.event_listing ul.sub_nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.event_listing ul.sub_nav > li > a:hover,
+.event_listing ul.sub_nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.event_listing ul.sub_nav > li.disabled > a {
+  color: #999999;
+}
+
+.event_listing ul.sub_nav > li.disabled > a:hover,
+.event_listing ul.sub_nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.event_listing ul.sub_nav .open > a,
+.event_listing ul.sub_nav .open > a:hover,
+.event_listing ul.sub_nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #ac0247;
+}
+
+.event_listing ul.sub_nav .open > a .caret,
+.event_listing ul.sub_nav .open > a:hover .caret,
+.event_listing ul.sub_nav .open > a:focus .caret {
+  border-top-color: #600128;
+  border-bottom-color: #600128;
+}
+
+.event_listing ul.sub_nav .nav-divider {
+  height: 1px;
+  margin: 10px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.event_listing ul.sub_nav > li > a > img {
+  max-width: none;
+}
+
+.event_listing ul.sub_nav > li {
+  float: left;
+}
+
+.event_listing ul.sub_nav > li > a {
+  border-radius: 4px;
+}
+
+.event_listing ul.sub_nav > li + li {
+  margin-left: 2px;
+}
+
+.event_listing ul.sub_nav > li.active > a,
+.event_listing ul.sub_nav > li.active > a:hover,
+.event_listing ul.sub_nav > li.active > a:focus {
+  color: #ffffff;
+  background-color: #428bca;
+}
+
+.event_listing ul.sub_nav > li.active > a .caret,
+.event_listing ul.sub_nav > li.active > a:hover .caret,
+.event_listing ul.sub_nav > li.active > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
 #content .event_listing p {
   margin: 0;
 }

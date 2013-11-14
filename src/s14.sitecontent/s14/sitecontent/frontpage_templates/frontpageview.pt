@@ -17,7 +17,7 @@
             tal:content="context/Description" />
         <a class="app-jumbotron-link" href="/vita"
             tal:attributes="href python:portal_url + '/vita'">
-            <small>Meine Vita &raquo;</small>
+            <small>Zu meiner Person &raquo;</small>
         </a>
     </div>
 

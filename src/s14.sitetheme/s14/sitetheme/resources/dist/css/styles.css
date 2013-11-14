@@ -10937,7 +10937,8 @@ dd.image-caption {
   padding: 22px 0;
 }
 
-.event_listing > header {
+.event_listing header,
+.event_listing nav {
   padding: 0;
 }
 
@@ -11197,12 +11198,14 @@ article.vevent .documentByLine {
   }
 }
 
-.event_listing ul.sub_nav {
-  display: block;
-  float: right;
-  margin-left: 0;
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
+.event_listing ul.mode_selector li.selected > a,
+.event_listing ul.mode_selector li.selected > a:hover,
+.event_listing ul.mode_selector li.selected > a:focus {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
 }
 
 #content .event_listing p {
@@ -11634,6 +11637,10 @@ select.input-lg {
 
 textarea.input-lg {
   height: auto;
+}
+
+.page-header {
+  border-bottom: 2px solid #f1f3ee;
 }
 
 .documentDescription {

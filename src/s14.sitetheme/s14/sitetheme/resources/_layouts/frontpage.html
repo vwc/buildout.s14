@@ -40,13 +40,23 @@
     <div class="fp-sm-block">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6">
+                <div class="col-xs-12 col-sm-6 col-md-8">
                     <div class="fp-sm-teaser" id="fp-facebook-teaser">
                         <p class="lead">Facebook Teaser Text</p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h4>Facebook Box</h4>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="app-box-social">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-like-box" data-href="http://www.facebook.com/AndreasStrobel2014" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="false"></div>
+                    </div>
                 </div>
             </div>
         </div>

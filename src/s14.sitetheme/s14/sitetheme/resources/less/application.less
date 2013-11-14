@@ -70,8 +70,10 @@ textarea {
     }
 }
 
-.app-page {
-    // font-size: @font-size-base * 1.25;
+@media (min-width: @screen-lg) {
+    .app-page {
+        font-size: @font-size-base * 1.25;
+    }
 }
 
 .app-list-item {
@@ -99,11 +101,6 @@ textarea {
         .square(50px);
         background:url(../../assets/img/quote-closed.png) no-repeat 0 0 transparent;
     }
-}
-
-// Event listing
-.mode_selector {
-    
 }
 
 @media (min-width: @screen-md) {

@@ -11790,6 +11790,12 @@ textarea.input-lg {
   padding-bottom: 0;
 }
 
+@media (min-width: 1200px) {
+  .app-page {
+    font-size: 20px;
+  }
+}
+
 .app-list-item {
   margin-bottom: 11px;
   border-bottom: 2px solid #dce0d4;

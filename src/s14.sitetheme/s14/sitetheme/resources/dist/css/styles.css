@@ -10663,6 +10663,29 @@ dd.image-caption {
   border-left: 5px solid #999999;
 }
 
+.app-deco {
+  text-align: center;
+}
+
+.app-decoarrow {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 44px solid transparent;
+  border-right: 44px solid transparent;
+  border-left: 44px solid transparent;
+}
+
+.app-decoarrow-default {
+  border-top: 44px solid #e3e4e5;
+}
+
+.app-decoarrow-light {
+  border-top: 44px solid #f1f3ee;
+}
+
 .app-simple {
   margin-top: 50px;
   border-top: 11px solid #428bca;
@@ -10734,6 +10757,8 @@ dd.image-caption {
   margin-right: auto;
   margin-bottom: 22px;
   margin-left: auto;
+  font-family: "Oswald", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -10824,7 +10849,7 @@ dd.image-caption {
 }
 
 .app-header {
-  background: #ababab;
+  background: #bababa;
 }
 
 .app-header .app-header-text {
@@ -10835,7 +10860,7 @@ dd.image-caption {
 @media (min-width: 768px) {
   .app-header {
     height: 330px;
-    background: url(../assets/img/header-bg-01.jpg) no-repeat 0 0 #ababab;
+    background: url(../assets/img/header-bg-01.jpg) no-repeat 0 0 #bababa;
   }
   body.section-blog .app-header {
     background-image: url(../assets/img/header-bg-02.jpg);
@@ -10898,6 +10923,10 @@ dd.image-caption {
 }
 
 /* event listing styles */
+
+.event_listing {
+  padding: 22px 0;
+}
 
 /* BEGIN COMMON EVENT STYLES */
 
@@ -11485,6 +11514,19 @@ textarea.input-lg {
   height: auto;
 }
 
+.documentDescription {
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .documentDescription {
+    font-size: 24px;
+  }
+}
+
 .app-content {
   padding-bottom: 22px;
   margin-top: 3px;
@@ -11683,9 +11725,17 @@ textarea.input-lg {
   }
 }
 
+.fp-bordered-column {
+  border-left: 2px solid #dce0d4;
+}
+
 .fp-box {
   padding-right: 22px;
   border-right: 2px solid #f1f3ee;
+}
+
+.fp-box .fb-box-footer {
+  padding: 22px 0;
 }
 
 .fp-content-block {
@@ -11700,4 +11750,10 @@ textarea.input-lg {
 
 .fp-sm-teaser .fp-facebook-teaser {
   padding: 22px;
+}
+
+@media (min-width: 768px) {
+  .fp-sm-teaser {
+    padding: 100px 50px;
+  }
 }

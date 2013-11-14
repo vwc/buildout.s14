@@ -39,29 +39,35 @@
                             </div>
                         </tal:block>
                     </div>
-                    <a class="btn btn-danger" href=""
-                        tal:attributes="href python:portal_url + '/termine'">
-                        Weitere Termine
-                    </a>
+                    <div class="fb-box-footer">
+                        <a class="btn btn-danger" href=""
+                            tal:attributes="href python:portal_url + '/termine'">
+                            Weitere Termine
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-md-6">
-                <h2>Blog</h2>
-                <div class="fp-content-block"
-                    tal:condition="view/has_blogentries">
-                    <tal:block tal:repeat="item view/blogentries">
-                        <div class="app-list-item">
-                            <h5 tal:content="item/Title" />
-                            <p tal:content="item/Description" />
-                            <a tal:attributes="href item/getURL">
-                                mehr &raquo;</a>
-                        </div>
-                    </tal:block>
+            <div class="col-xs-12 col-md-6 fp-bordered-column">
+                <div class="fp-box">
+                    <h2>Blog</h2>
+                    <div class="fp-content-block"
+                        tal:condition="view/has_blogentries">
+                        <tal:block tal:repeat="item view/blogentries">
+                            <div class="app-list-item">
+                                <h5 tal:content="item/Title" />
+                                <p tal:content="item/Description" />
+                                <a tal:attributes="href item/getURL">
+                                    mehr &raquo;</a>
+                            </div>
+                        </tal:block>
+                    </div>
+                    <div class="fb-box-footer">
+                        <a class="btn btn-warning" href=""
+                            tal:attributes="href python:portal_url + '/blog'">
+                            Weitere Artikel
+                        </a>
+                    </div>
                 </div>
-                <a class="btn btn-warning" href=""
-                    tal:attributes="href python:portal_url + '/blog'">
-                    Weitere Artikel
-                </a>
             </div>
         </div>
     </div>

@@ -48,6 +48,13 @@ textarea {
   .input-size(@input-height-large; @padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
 }
 
+// Style plone default description
+
+.documentDescription {
+    .lead();
+}
+
+
 .app-content {
     margin-top: 3px;
     margin-bottom: @line-height-computed;
@@ -93,9 +100,16 @@ textarea {
     .nav-tabs();
 }
 
+.fp-bordered-column {
+    border-left: 2px solid @app-green-light;
+}
+
 .fp-box {
     padding-right: @line-height-computed;
     border-right: 2px solid @app-green-lighter;
+    .fb-box-footer {
+        padding: @line-height-computed 0;
+    }
 }
 
 .fp-content-block {
@@ -107,6 +121,9 @@ textarea {
     padding: @line-height-computed;
     .fp-facebook-teaser {
         padding: @line-height-computed;
+    }
+    @media (min-width: @screen-tablet) {
+        padding: (@navbar-height * 2) @navbar-height;
     }
 }
 

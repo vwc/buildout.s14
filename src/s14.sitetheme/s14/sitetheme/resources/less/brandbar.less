@@ -54,12 +54,13 @@
         }
         
         // Active state
-        &.active > a {
+        &.active > a,
+        &.selected > a {
           &,
           &:hover,
           &:focus {
             color: @nav-pills-active-link-hover-color;
-            background-color: @nav-pills-active-link-hover-bg;
+            background-color: @app-green;
           }
         }
     }
@@ -88,7 +89,8 @@
                 background-color: @navbar-default-link-hover-bg;
             }
         }
-        > .active > a {
+        > .active > a,
+        > .selected > a {
           &,
           &:hover,
           &:focus {

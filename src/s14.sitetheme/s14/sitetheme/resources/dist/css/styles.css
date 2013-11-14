@@ -10810,10 +10810,13 @@ dd.image-caption {
 }
 
 .nav-main > li.active > a,
+.nav-main > li.selected > a,
 .nav-main > li.active > a:hover,
-.nav-main > li.active > a:focus {
+.nav-main > li.selected > a:hover,
+.nav-main > li.active > a:focus,
+.nav-main > li.selected > a:focus {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #477065;
 }
 
 @media (min-width: 768px) {
@@ -10848,8 +10851,11 @@ dd.image-caption {
 }
 
 .app-navbar .navbar-nav > .active > a,
+.app-navbar .navbar-nav > .selected > a,
 .app-navbar .navbar-nav > .active > a:hover,
-.app-navbar .navbar-nav > .active > a:focus {
+.app-navbar .navbar-nav > .selected > a:hover,
+.app-navbar .navbar-nav > .active > a:focus,
+.app-navbar .navbar-nav > .selected > a:focus {
   color: #555555;
   background-color: #eeeeee;
 }
@@ -10859,8 +10865,14 @@ dd.image-caption {
 }
 
 .app-header .app-header-text {
-  overflow: hidden;
-  text-indent: -9999px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .app-header .app-header-text {
+    overflow: hidden;
+    text-indent: -9999px;
+  }
 }
 
 @media (min-width: 768px) {

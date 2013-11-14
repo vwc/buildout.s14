@@ -5,8 +5,11 @@
 .app-header {
     background: @app-hero-bg;
     .app-header-text {
-        text-indent: -9999px;
-        overflow: hidden;              
+        color: #fff;
+        @media (min-width: @screen-sm) {
+            text-indent: -9999px;
+            overflow: hidden;
+        }
     }
 }
 

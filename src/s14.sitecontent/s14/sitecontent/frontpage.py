@@ -21,7 +21,7 @@ class FrontPageView(grok.View):
         catalog = api.portal.get_tool(name='portal_catalog')
         items = catalog(object_provides=IBlogEntry.__identifier__,
                         review_state='published',
-                        sort_on='modified',
+                        sort_on='effective',
                         sort_order='reverse',
                         sort_limit=2)[:2]
         results = IContentListing(items)

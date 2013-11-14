@@ -13,7 +13,7 @@
 @media (min-width: @screen-tablet) {
     .app-header {
         height: 330px;
-        background:url(../../assets/img/header-bg-01.jpg) no-repeat 100% 0 @app-hero-bg;
+        background:url(../../assets/img/header-bg-01.jpg) no-repeat 0 0 @app-hero-bg;
     }
     body.section-blog .app-header {
         background-image:url(../../assets/img/header-bg-02.jpg);
@@ -23,6 +23,12 @@
     }
     body.section-termine .app-header {
         background-image:url(../../assets/img/header-bg-04.jpg);
+    }
+}
+
+@media (min-width: @screen-md) {
+    .app-header {
+        background-position: 50% 0;
     }
 }
 

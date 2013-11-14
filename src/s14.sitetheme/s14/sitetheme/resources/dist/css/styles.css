@@ -7180,8 +7180,8 @@ td.visible-print {
   font-family: 'FontAwesome';
   font-style: normal;
   font-weight: normal;
-  src: url('../../assets/fonts/fontawesome-webfont.eot?v=4.0.1');
-  src: url('../../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('../../assets/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('../../assets/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('../../assets/fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
+  src: url('../assets/fonts/fontawesome-webfont.eot?v=4.0.1');
+  src: url('../assets/fonts/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'), url('../assets/fonts/fontawesome-webfont.woff?v=4.0.1') format('woff'), url('../assets/fonts/fontawesome-webfont.ttf?v=4.0.1') format('truetype'), url('../assets/fonts/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
 }
 
 .fa {
@@ -10835,16 +10835,22 @@ dd.image-caption {
 @media (min-width: 768px) {
   .app-header {
     height: 330px;
-    background: url(../../assets/img/header-bg-01.jpg) no-repeat 100% 0 #ababab;
+    background: url(../assets/img/header-bg-01.jpg) no-repeat 0 0 #ababab;
   }
   body.section-blog .app-header {
-    background-image: url(../../assets/img/header-bg-02.jpg);
+    background-image: url(../assets/img/header-bg-02.jpg);
   }
   body.section-vita .app-header {
-    background-image: url(../../assets/img/header-bg-03.jpg);
+    background-image: url(../assets/img/header-bg-03.jpg);
   }
   body.section-termine .app-header {
-    background-image: url(../../assets/img/header-bg-04.jpg);
+    background-image: url(../assets/img/header-bg-04.jpg);
+  }
+}
+
+@media (min-width: 992px) {
+  .app-header {
+    background-position: 50% 0;
   }
 }
 
@@ -11503,7 +11509,7 @@ textarea.input-lg {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(../../assets/img/quote-open.png) no-repeat 0 0 transparent;
+  background: url(../assets/img/quote-open.png) no-repeat 0 0 transparent;
   content: "";
 }
 
@@ -11514,7 +11520,7 @@ textarea.input-lg {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(../../assets/img/quote-closed.png) no-repeat 0 0 transparent;
+  background: url(../assets/img/quote-closed.png) no-repeat 0 0 transparent;
   content: "";
 }
 

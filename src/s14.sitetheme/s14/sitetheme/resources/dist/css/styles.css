@@ -10901,6 +10901,7 @@ dd.image-caption {
 }
 
 .app-jumbotron {
+  padding: 15px;
   margin-bottom: 6px;
   text-align: center;
 }

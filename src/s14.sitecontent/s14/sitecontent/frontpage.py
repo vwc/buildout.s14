@@ -1,5 +1,6 @@
 from five import grok
 from plone import api
+from DateTime.DateTime import DateTime
 
 from plone.app.contentlisting.interfaces import IContentListing
 from plone.event.interfaces import IEvent
@@ -21,6 +22,7 @@ class FrontPageView(grok.View):
         items = catalog(object_provides=IBlogEntry.__identifier__,
                         review_state='published',
                         sort_on='modified',
+                        sort_order='reverse',
                         sort_limit=2)[:2]
         results = IContentListing(items)
         return results
@@ -29,7 +31,9 @@ class FrontPageView(grok.View):
         catalog = api.portal.get_tool(name='portal_catalog')
         items = catalog(object_provides=IEvent.__identifier__,
                         review_state='published',
-                        sort_on='modified',
+                        end={'query': DateTime(),
+                             'range': 'min'},
+                        sort_on='start',
                         sort_limit=4)[:4]
         results = IContentListing(items)
         return results

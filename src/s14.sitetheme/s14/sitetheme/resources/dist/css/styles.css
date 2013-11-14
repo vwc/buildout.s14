@@ -10776,7 +10776,7 @@ dd.image-caption {
 }
 
 .app-brandname {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 22px;
   color: #477065;
@@ -11821,7 +11821,7 @@ textarea.input-lg {
   content: "";
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .fp-bordered-column {
     border-left: 2px solid #dce0d4;
   }

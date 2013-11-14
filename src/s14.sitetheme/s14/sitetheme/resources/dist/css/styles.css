@@ -11791,9 +11791,7 @@ textarea.input-lg {
 }
 
 @media (min-width: 1200px) {
-  .app-page {
-    font-size: 20px;
-  }
+  
 }
 
 .app-list-item {
